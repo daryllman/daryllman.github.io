@@ -15,162 +15,222 @@
 </head>
 
 <body>
-    <!-- Content-->
-
-    <!--Design created by Amil Naik under the MIT license-->
-    <!--Feel free to use this on your own sites as well as tweak, adjust, and redistribute however you like-->
-    <!--While not required, credit/attribution is appreciated-->
-    <!-- Set language to english-->
-    <!--Creates header container-->
-    <div class="header" id="home">
-        <!--font-awesome icon for menu bar on mobile-->
-        <i class="fa fa-bars"></i>
-        <!--Container mobileNav for mobile menu-->
-        <div class="mobileNav">
-            <br>
-            <!--Mobile nav menu items each contained by link to appropriate section and mobileNavItem container-->
-            <a href="#home">
-                <div class="mobileNavItem">Home</div>
-            </a>
-            <a href="#about">
-                <div class="mobileNavItem">About</div>
-            </a>
-            <a href="#contact">
-                <div class="mobileNavItem">Contact</div>
-            </a>
-            <a href="#testimonials">
-                <div class="mobileNavItem">Testimonials</div>
-            </a>
-            <a href="#services">
-                <div class="mobileNavItem">Services</div>
-            </a>
-        </div>
-        <!--Creates nav bar containger-->
-        <div class="nav">
-            <!--Listing of nav bar items with links to appropriate part of site included-->
-            <a href="#home">
-                <div class="navItem">Home</div>
-            </a>
-            <a href="#about">
-                <div class="navItem">About</div>
-            </a>
-            <a href="#contact">
-                <div class="navItem">Contact</div>
-            </a>
-            <a href="#testimonials">
-                <div class="navItem">Testimonials</div>
-            </a>
-            <a href="#services">
-                <div class="navItem">Services</div>
-            </a>
-        </div>
-        <!-- Fill the (BrandName) with your company name and (BrandTag) with your company's tagline -->
-        <div class="brand animateBrand">BrandName</div>
-        <div class="brandTag animateBrandTag">BrandTag</div>
-    </div>
-
-    <!--Sets up a row with two columns within, gives it the id=about for nav bar linking -->
-    <div id="about" class="row">
-        <!--Column 1 contains About Us header and image -->
-        <div class="col">
-            <h2>About Us</h2>
-            <!--imgholder div class contains the image and limits the size of the image, placeholder image-->
-            <div class="imgHolder">
-                <img src="https://gdurl.com/ho6M" alt="Your image text here!">
-            </div>
-        </div>
-        <!--Column 2 contains some descriptive text for the section, styled with class colText-->
-        <div class="col">
-            <!--Fill this text with info about your business or yourself-->
-            <div class="colText">
-                This is the place to talk about your business! Show off what you do, talk about your roots, or really whatever you think belongs in this section.
-            </div>
-        </div>
-    </div>
-
-    <!--Sets up a row with two columns within, gives it the id=contact for nav bar linking -->
-    <div id="contact" class="row">
-        <!--Header excluded from coluns to center it-->
-        <h2>Contact</h2><br>
-        <!--Styled contact form, but note PHP code is not in place to utilize it or validate entries. There are plenty of resources online if you wish to copy and paste some code for it.-->
-        <form id="contactFormSend" method="POST" autocomplete="on" action="">
-            <!--Column 1 contains the name and email fields as well as labels-->
-            <div class="col">
-                <!--contact class contains the fields and labels-->
-                <div class="contact">
-                    <!--contactText class contains just the labels for the fields-->
-                    <div class="contactText">Name:</div><input type="text" name="name" maxlength="100" placeholder="Your Name">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inner">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand brand" href="#">TREEPPO</a>
                 </div>
-                <div class="contact">
-                    <div class="contactText">Email:</div><input type="text" name="email" maxlength="100" placeholder="Your Email Address">
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <a name="home"></a>
+        <div class="container-fluid">
+            <div class="more-space row">
+                <div class="col-md-12">
+                    <div class="text-center intro">
+                        <h1>Hello there,</h1>
+                        <h4>We are Treeppo.</h4>
+                        <h4 class="red">A creative bunch who love code and design.</h4>
+                    </div>
                 </div>
             </div>
-            <!--Column 2 contains the email field and label-->
-            <div class="col">
-                <!--Label centered over field-->
-                <div class="contact center">Message:</div>
-                <textarea name="message" maxlength="8000" placeholder="Your Message"></textarea>
-            </div>
-            <button name="submit">Submit</button>
-        </form>
-    </div>
-
-    <!--Sets up a row with two columns within, gives it the id=testimonials for nav bar linking -->
-    <div id="testimonials" class="row">
-        <!--Column 1 contains some descriptive text for the section, styled with class colText-->
-        <div class="col">
-            <!--Fill in some customer testimonials here-->
-            <div class="colText">
-                "This company had outstanding service! Nothing can top their superior performance in every category!"<br> -John Doe
-                <br><br> "Come to this company for every need! They have everything you could ask for, and everything you'd forget to ask for!"<br> -Jane Doe
-            </div>
         </div>
+        </div>
+    </header>
 
-        <!--Column 2 contains Testimonials header and image, right class floats the image to the right side of the container and column, -->
-        <div class="col right">
-            <h2>Testimonials</h2>
-            <!--imgholder div class contains the image and limits the size of the image, imgHolderRight floats the image to the right side of the column on PC and is otherwise inactive, placeholder image-->
-            <div class="imgHolder imgHolderRight">
-                <img src="https://gdurl.com/ho6M" alt="Your image text here!">
+    <!----ABOUT US---->
+
+    <div class="about-us" id="startchange">
+        <a name="about"></a>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="descript col-xs-12 col-sm-12 col-md-12">
+                    <h1>ABOUT US</h1>
+                    <p class="about-us-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#" class="team">Our Team</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--Sets up a row with one column within, gives it the id=services for nav bar linking -->
-    <div id="services" class="row">
-        <!--Services Row Header -->
-        <span class="center"><h2>Services</h2></span>
-        <!--symbolRow container for set of symbols displayed in a line-->
-        <div class="symbolRow">
-            <!--Each symbol paired with a set of symbolText underneath it, flll symbols with text or images and symbolTexts with captions-->
-            <div class="symbol" id="s1">Service 1</div>
-            <div class="symbol" id="s2">Service 2</div>
-            <div class="symbol" id="s3">Service 3</div>
-            <div class="symbolText" id="t1">Talk about one of your services here!</div>
-            <div class="symbolText" id="t2">Talk about one of your services here!</div>
-            <div class="symbolText" id="t3">Talk about one of your services here!</div>
+    <div class="break2 container-fluid text-center">
+        <h3>We love being busy!</h3>
+    </div>
+
+    <!----SERVICES---->
+    <div class="works">
+        <a name="works"></a>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="text-center col-xs-12 col-sm-12 col-md-12">
+                    <h1>WORKS</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://picjumbo.imgix.net/HNCK8347.jpg?q=40&w=1650&sharp=30" class="img-responsive" />
+                        <div class="caption">
+                            <h3>Travel Agency</h3>
+                            <p>We made a website for a travel agency. Check it out!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://picjumbo.imgix.net/HNCK8318.jpg?q=40&w=1650&sharp=30" class="img-responsive" />
+                        <div class="caption">
+                            <h3>Wine and Dine</h3>
+                            <p>A website for an up and coming restuarant. Check it out!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://picjumbo.imgix.net/HNCK7731.jpg?q=40&w=1650&sharp=30" class="img-responsive" />
+                        <div class="caption">
+                            <h3>Shoe Shine</h3>
+                            <p>Check out what we did with Shoe Shine's website. An ecommerce site for shoes.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="space row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://picjumbo.imgix.net/HNCK8236.jpg?q=40&w=1650&sharp=30" class="img-responsive" />
+                        <div class="caption">
+                            <h3>Traveller's Blog</h3>
+                            <p>Take a look at our design of the Traveller's Blog. The website of a world traveller.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://picjumbo.imgix.net/HNCK7802.jpg?q=40&w=1650&sharp=30" class="img-responsive" />
+                        <div class="caption">
+                            <h3>Digitize</h3>
+                            <p>See our work on Digitize website. A digital marketing firm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://picjumbo.imgix.net/HNCK7784.jpg?q=40&w=1650&sharp=30" class="img-responsive" />
+                        <div class="caption">
+                            <h3>HeadPhones DotInc</h3>
+                            <p>A website for HeadPhones DotInc's latest product. Take a look!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
     </div>
 
-    <!--row container with footer class applied-->
-    <div class="footer row">
-        <!--Column 1 contains company info, fill in yours!-->
-        <div class="col">
-            Email: yourcompany@yourdomain.com<br> Phone: (555) 555-5555<br> Address: 123 Your Company's Street<br> Hours: Mon-Fri: 8 AM - 10 PM<br>
-            <span class="hoursOffset">Sat: 9 AM - 11 PM</span><br>
-            <span class="hoursOffset">Sun: Closed</span>
-        </div>
+    <div class="break1 container-fluid text-center">
+        <h3>Come connect with us!</h3>
+    </div>
 
-        <!--Column 2 with icons class applied holds each icon link to social media accounts, fill the href attribute with your links!-->
-        <div class="col icons">
-            <a href="" class="fa fa-twitter"></a>
-            <a href="" class="fa fa-facebook"></a>
-            <a href="" class="fa fa-yelp"></a>
-            <a href="" class="fa fa-instagram"></a>
+    <div class="contact text-center">
+        <a name="contact"></a>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <h1>CONTACT</h3>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h2>Connect with Treeppo at: </h2>
+                    <p>tashfeenc1234@gmail.com</p>
+                    <br/>
+                    <br/>
+                    <h3>Or, you could get in touch with us on social media</h3>
+                </div>
+
+            </div>
+
+            <div class="row social-media-row-1">
+
+                <div class="icon col-xs-6 col-sm-6 col-md-6">
+                    <a href="https://www.facebook.com/tashfeen.choudhury"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="icon col-xs-6 col-sm-6 col-md-6">
+                    <a href="https://twitter.com/tashmchy"><i class="fa fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="icon col-xs-6 col-sm-6 col-md-6">
+                    <a href="https://www.linkedin.com/profile/view?id=AAIAABms3KcBtc_riyoK4ki6aXd96vrrJ9KzI9k&trk=nav_responsive_tab_profile"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <div class="icon col-xs-6 col-sm-6 col-md-6">
+                    <a href="https://github.com/tashfeenMustafa"><i class="fa fa-github"></i></a>
+                </div>
+
+            </div>
+
+
+
         </div>
 
     </div>
 
+    <footer>
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="text-center go-up-icon col-xs-12 col-sm-6 col-md-6">
+                    <a href="#home"><i class="fa fa-angle-up"></i></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <p>Copyright Treeppo Web Design Studio 2015. All Rights Reserved</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
 
     <!--Content-->
 </body>
